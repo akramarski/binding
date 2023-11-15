@@ -1,0 +1,223 @@
+/* ========== import fonts ========== */
+/* ========== Direction 1 ========== */
+/* Onest Regular */
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+/* Space mono */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* Libre Barcode 128 text */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
+/* ========== Direction 2 ========== */
+/* Erica one */
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Lexend+Tera:wght@700&display=swap');
+/* Lexend tera */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Erica+One&family=Lexend+Tera:wght@700&display=swap');
+/* Garamond */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Erica+One&family=Lexend+Tera:wght@700&family=Lexend+Zetta:wght@200&display=swap');
+
+/* ========== Direction 3 ========== */
+/* Cormorant Infant */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+/* Dangrek */
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+/* ========== variables ========== */
+:root
+{
+    /* color */
+    --lightpink-bg: #FFF3F3;
+    --black-text: black;
+    --darkpink-bg: #FFE0E0;
+}
+
+
+/* ========== global settings ========== */
+
+/* colors */
+
+.lightpinkbg
+{
+    background-color: var(--lightpink-bg);
+}
+.quote
+{
+    background-color: var(--darkpink-bg);
+    
+}
+
+
+/* global margin */
+.content-margin
+{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1000px)
+{
+    .content-margin
+    {max-width: 1080px;}
+}
+
+
+/* flex box */
+.menu{
+    position:sticky;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  
+} 
+.pinkbox-main
+    {width: 80%;
+    align-items: right;
+    }
+    
+.regular-text
+    {width: 60%;}
+    .regular-text p /* gap */
+    {padding-right: 10%;}
+
+
+.whitebg, .subtext
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tablecontent{
+
+    max-width: 60%;
+
+}
+
+.section{
+    align-items: right;
+}
+
+/* header flexbox size */
+.header-flexbox
+{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1000px)
+{
+    .header-flexbox
+    {
+        height: 830px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/* typefaces */
+/* serif */
+.title{
+    font-family:var(--font-title);
+    font-size: 50px;
+    line-height: 180%;
+}
+
+
+.textinfo, .tablecontent, .menu, .quote
+{
+    font-family: var(--font-subtitle);
+    font-size: var(--fontsize-tablecontent);
+    font-weight:300;
+    line-height: 180%;
+}
+.regular-text{
+    font-family:  var(--font-regulartext);
+    font-size: var(--fontsize-regulartext);
+    line-height:var(--linehight-regulartext);
+}
+/* san-serif */
+
+.autor-desktop
+{
+    font-size:var( --fontsize-author);
+    font-family: var(--font-subtitle);
+    margin-top: 40px;
+    text-transform: var(--text-uppercase);
+    letter-spacing: 2px;
+}
+
+.subhead-desktop{
+    font-size:var( --fontsize-subhead);
+    font-family: var(--font-subtitle);
+    margin-top: -50px;
+    text-transform: var(--text-uppercase);
+    letter-spacing: 2px;
+}
+
+.main-title{
+    font-family: var(--font-maintitle);
+    font-size:var( --fontsize-maintitle);
+    text-transform: var(--text-uppercase);
+    margin-top: 30px;
+    letter-spacing: 2px;
+
+}
+
+.chapter-desktop{
+    padding-bottom: 40px;
+}
+
+/* default text setting */
+sup
+{
+    vertical-align: super;
+    font-size: smaller;
+    line-height: 1;
+}
+
+/* side panel */
+.pinkbox-main
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* paragrpah spacing */
+.regular-text p:not(:first-child)
+{
+    margin-top: 20px;
+
+}
+
+
+/* Global nav */
+ul {
+    /* FLOAT! */
+    float:right;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 20px;
+}
+
+
+a:hover{
+  color: var(--darkpink-bg);
+  transition: 0.3s;
+  display: inline-block;
+  cursor: pointer
+}
+
+li{
+    list-style-type: none;
+}
