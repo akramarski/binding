@@ -1,0 +1,15 @@
+:root{
+
+    --font-title:'Dangrek', sans-serif;
+    --font-subtitle:'Dangrek', sans-serif;
+    --font-maintitle:'Dangrek', sans-serif;
+    --font-regulartext:'Cormorant Infant', serif;
+    
+    --fontsize-author:12px;
+    --fontsize-subhead:20px;
+    --fontsize-maintitle:100px;
+    --fontsize-regulartext:30px;
+    --fontsize-tablecontent:25px;
+
+   
+}
