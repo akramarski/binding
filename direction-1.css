@@ -1,0 +1,18 @@
+:root{
+
+    --font-title:'Libre Barcode 39 Text';
+    --font-subtitle:'Space Mono';
+    --font-maintitle:'Space Mono';
+    --font-regulartext:'Onest';
+    --linehight-regulartext:30px;
+    
+    --fontsize-author:18px;
+    --fontsize-subhead:24px;
+    --fontsize-maintitle:80px;
+    --fontsize-regulartext:16px;
+    --fontsize-tablecontent:18px;
+
+    --text-uppercase:uppercase;
+
+}
+
