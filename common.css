@@ -1,219 +1,194 @@
-/* ========== import fonts ========== */
-/* ========== Direction 1 ========== */
-/* Onest Regular */
-@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
-/* Space mono */
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-/* Libre Barcode 128 text */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+/* ========== new version ========== */
 
-/* ========== Direction 2 ========== */
-/* Erica one */
-@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Lexend+Tera:wght@700&display=swap');
-/* Lexend tera */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Erica+One&family=Lexend+Tera:wght@700&display=swap');
-/* Garamond */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Erica+One&family=Lexend+Tera:wght@700&family=Lexend+Zetta:wght@200&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
 
-/* ========== Direction 3 ========== */
-/* Cormorant Infant */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
-/* Dangrek */
-@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
-
-/* ========== variables ========== */
-:root
-{
-    /* color */
-    --lightpink-bg: #FFF3F3;
-    --black-text: black;
-    --darkpink-bg: #FFE0E0;
+/*Variables*/
+.root{
+    --background-color:#BE4824;
+    --fontcolor-white: white;
+    --font-librecanson:'Libre Caslon Text', serif;
 }
 
+/*Index*/
 
-/* ========== global settings ========== */
-
-/* colors */
-
-.lightpinkbg
-{
-    background-color: var(--lightpink-bg);
+.header-flexbox{
+    background-color:#BE4824;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    font-family:'Libre Caslon Text', serif;
+    color: black;
+    font-size: 80px;
+    flex-flow: hidden;
+    letter-spacing: 1px;
+    line-height: 70px;
 }
-.quote
-{
-    background-color: var(--darkpink-bg);
-    
+.index-row2{
+    background-color:#BE4824;
+    font-size: 14px;
 }
-
-
-/* global margin */
-.content-margin
-{
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-@media (min-width: 1000px)
-{
-    .content-margin
-    {max-width: 1080px;}
-}
-
-
-/* flex box */
 .menu{
-    position:sticky;
-}
-.container
-{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: stretch;
-  
-} 
-.pinkbox-main
-    {width: 80%;
-    align-items: right;
-    }
-    
-.regular-text
-    {width: 60%;}
-    .regular-text p /* gap */
-    {padding-right: 10%;}
-
-
-.whitebg, .subtext
-{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.tablecontent{
-
-    max-width: 60%;
-
-}
-
-.section{
-    align-items: right;
-}
-
-/* header flexbox size */
-.header-flexbox, .subtext 
-{
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 70px;
-    flex-direction: column;
+    display:inline-flex;
     justify-content: space-between;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-}
-@media (min-width: 1000px)
-{
-    .header-flexbox
-    {
-        height: 830px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-}
-.subtext{
-    display: inline-flexbox;
-
-}
-
-/* typefaces */
-/* serif */
-.title{
-    font-family:var(--font-title);
-    font-size: 50px;
-    line-height: 180%;
-}
-
-
-.textinfo, .tablecontent, .menu, .quote
-{
-    font-family: var(--font-subtitle);
-    font-size: var(--fontsize-tablecontent);
-    font-weight:300;
-    line-height: 180%;
-}
-.regular-text{
-    font-family:  var(--font-regulartext);
-    font-size: var(--fontsize-regulartext);
-    line-height:var(--linehight-regulartext);
-}
-/* san-serif */
-
-.autor-desktop
-{
-    font-size:var( --fontsize-author);
-    font-family: var(--font-subtitle);
-    margin-top: 40px;
-    text-transform: var(--text-uppercase);
-    letter-spacing: 2px;
-}
-
-.subhead-desktop{
-    font-size:var( --fontsize-subhead);
-    font-family: var(--font-subtitle);
-    margin-top: -50px;
-    text-transform: var(--text-uppercase);
-    letter-spacing: 2px;
-}
-
-.main-title{
-    font-family: var(--font-maintitle);
-    font-size:var( --fontsize-maintitle);
-    text-transform: var(--text-uppercase);
-    margin-top: 30px;
-    letter-spacing: 2px;
-
-}
-
-.chapter-desktop{
-    padding-bottom: 40px;
-}
-
-/* default text setting */
-sup
-{
-    vertical-align: super;
-    font-size: smaller;
-    line-height: 1;
-}
-
-/* side panel */
-
-/* paragrpah spacing */
-.regular-text p:not(:first-child)
-{
-    margin-top: 20px;
-
-}
-
-
-/* Global nav */
-ul {
-    /* FLOAT! */
-    float:right;
-    display: inline-flex;
-    justify-content: space-between;
-    list-style-type: none;
     margin: 20px;
+    flex-direction: column;
 }
 
+.index-row3{
+    background-color:#BE4824;
+    font-family: 'Roboto Mono', monospace;
+    padding-left:60px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 24px;
+   
+}
+
+.index-description{
+    background-color:#BE4824;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 18px;
+   
+}
+
+.index-text1, .index-text2, .index-text3{
+    background-color:#BBBBBB;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    text-align: center;
+   
+}
+
+#number{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+   
+}
+
+#name {
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+   
+}
+#name2 {
+    font-family: 'Onest', sans-serif;;
+    font-size: 50px;
+    letter-spacing: 1px;
+   
+}
+
+#name3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    letter-spacing: 1px;
+   
+}
+#author{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+   
+}
+
+
+/* defining our links */
+
+a{
+    font-family: 'Roboto Mono', monospace;;
+    text-decoration: none;
+    color:black;
+    
+}
+nav a{
+    padding:5px 15px;
+    color: black;
+}
 
 a:hover{
-  color: var(--darkpink-bg);
-  transition: 0.3s;
-  display: inline-block;
-  cursor: pointer
+    text-decoration: underline;
+    font-family: 'Libre Barcode 128 Text';
+    color:white;  
+    font-size: 28px;
+}
+nav a:hover{
+    color: #BBBBBB;
 }
 
-li{
-    list-style-type: none;
+ul{
+    float: center;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 40px;
+    text-align: center;
+
+}
+
+/*Past*/
+
+.header-flexboxreading{
+    background-color:white;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 200px;
+    font-family:'Libre Caslon Text', serif;
+    color: black;
+    font-size: 30px;
+    flex-flow: hidden;
+    letter-spacing: 1px;
+    line-height: 25px;
+    max-width: 1080px;
+}
+.past-row2{
+    background-color:white;
+    font-size: 14px;
+}
+
+.past-row3{
+    background-color:white;
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: right;
+    font-size: 24px;
+   
+}
+#name-past{
+    font-family: 'Old Standard TT', serif;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+#number-past, #author-past{
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.past-description{
+    background-color:white;
+    font-family: 'Old Standard TT', serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+   
 }
