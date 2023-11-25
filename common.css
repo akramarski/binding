@@ -9,15 +9,16 @@
 
 /*Variables*/
 .root{
-    --background-color:#BE4824;
+    --background-color:#F8F5EC;
     --fontcolor-white: white;
     --font-librecanson:'Libre Caslon Text', serif;
+    --outlinebox: 0.5px solid #440021;
 }
 
 /*Index*/
 
 .header-flexbox{
-    background-color:#BE4824;
+    background-color:#F8F5EC;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 20px;
@@ -26,11 +27,13 @@
     font-size: 80px;
     flex-flow: hidden;
     letter-spacing: 1px;
-    line-height: 70px;
+    
 }
 .index-row2{
-    background-color:#BE4824;
+    background-color:#F8F5EC;
     font-size: 14px;
+   
+    
 }
 .menu{
     display:inline-flex;
@@ -40,11 +43,11 @@
 }
 
 .index-row3{
-    background-color:#BE4824;
+    background-color:#F8F5EC;
     font-family: 'Roboto Mono', monospace;
     padding-left:60px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 60px;
+ 
     text-align: right;
     text-transform: uppercase;
     font-size: 24px;
@@ -52,57 +55,60 @@
 }
 
 .index-description{
-    background-color:#BE4824;
+    background-color:#F8F5EC;
     font-family: 'Roboto Mono', monospace;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 40px;
+    padding-left: 40px;
     text-align: center;
-    font-size: 18px;
-   
+    font-size: 16px;
+    background-color: #eb9bc2;
+
 }
 
 .index-text1, .index-text2, .index-text3{
-    background-color:#BBBBBB;
+    background-color:#F8F5EC;
     padding-top: 50px;
     padding-right: 20px;
     padding-bottom: 50px;
     padding-left: 20px;
     text-align: center;
-   
+
 }
 
 #number{
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     text-transform: uppercase;
+    outline: 1px solid #eb9bc2;
    
 }
 
 #name {
     font-family: 'Old Standard TT', serif;
     font-size: 50px;
+    outline: 1px solid #eb9bc2;
    
 }
 #name2 {
     font-family: 'Onest', sans-serif;;
     font-size: 50px;
     letter-spacing: 1px;
-   
+    outline: 1px solid #eb9bc2;
 }
 
 #name3 {
     font-family: 'Roboto Mono', monospace;
     font-size: 50px;
     letter-spacing: 1px;
-   
+    outline: 1px solid #eb9bc2;
 }
 #author{
     font-family: 'Roboto Mono', monospace;
     font-size: 10px;
     text-transform: uppercase;
-   
+    outline: 1px solid #eb9bc2;
 }
 
 
@@ -112,6 +118,7 @@ a{
     font-family: 'Roboto Mono', monospace;;
     text-decoration: none;
     color:black;
+    
     
 }
 nav a{
@@ -139,6 +146,10 @@ ul{
 
 }
 
+nav a.active{
+    color: #eb9bc2;
+}
+
 /*Past*/
 
 .header-flexboxreading{
@@ -153,34 +164,77 @@ ul{
     letter-spacing: 1px;
     line-height: 25px;
     max-width: 1080px;
+  
 }
 .past-row2{
     background-color:white;
     font-size: 14px;
+    
 }
 
 .past-row3{
     background-color:white;
     font-family: 'Roboto Mono', monospace;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: right;
     font-size: 24px;
+    
    
 }
 #name-past{
     font-family: 'Old Standard TT', serif;
     font-size: 80px;
-    line-height: 80px;
+    line-height: 90px;
     text-align: center;
+    outline: 0.5px solid #eb9bc2;
+
 }
 #number-past, #author-past{
     font-family: 'Old Standard TT', serif;
     font-size: 20px;
     line-height: 40px;
     text-align: center;
+    outline: 0.5px solid #eb9bc2;
 }
-.past-description{
+#description{
+    background-color:white;
+    font-family: 'Old Standard TT', serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+
+   
+}
+.tableofcontent{
+    background-color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 12px;
+   
+}
+
+.listcontent{
+    float: center;
+    display:block;
+    list-style: none;
+
+
+}
+#content-past{
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+
+}
+
+.chapter-desktop{
     background-color:white;
     font-family: 'Old Standard TT', serif;
     padding-top: 40px;
@@ -190,5 +244,36 @@ ul{
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
-   
+
+}
+.container{
+    margin-top: 30px;
+    padding: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 30px;
+    
+
+}
+
+.container-text{
+    margin-top: 30px;
+    padding: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 30px;
+    
+
+}
+
+.blocktext{
+    margin-bottom: 50px;
+}
+.creambox-main{
+    font-family:'Old Standard TT', serif;
+    font-size: 30px;
+    line-height:40px;
+    align-content: left;
+    padding-bottom: 40px;
+    
 }
