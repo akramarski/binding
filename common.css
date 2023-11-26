@@ -293,8 +293,9 @@ background-color: #F8F5EC;
     font-size: 24px;
     line-height:35px;
     align-content: left;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     font-style: italic;
+    background-color: #FFE5F2;
     
 }
 
