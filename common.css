@@ -16,9 +16,12 @@
 }
 
 /*Index*/
+.mainbanner
+{ height:100vh;
+background-color: #F8F5EC;
+}
 
 .header-flexbox{
-    background-color:#F8F5EC;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 20px;
@@ -27,12 +30,12 @@
     font-size: 80px;
     flex-flow: hidden;
     letter-spacing: 1px;
+    line-height: 80px;
     
 }
 .index-row2{
-    background-color:#F8F5EC;
     font-size: 14px;
-   
+
     
 }
 .menu{
@@ -43,14 +46,13 @@
 }
 
 .index-row3{
-    background-color:#F8F5EC;
     font-family: 'Roboto Mono', monospace;
     padding-left:60px;
     padding-bottom: 60px;
- 
     text-align: right;
     text-transform: uppercase;
     font-size: 24px;
+    color: black;
    
 }
 
@@ -89,6 +91,7 @@
     font-family: 'Old Standard TT', serif;
     font-size: 50px;
     outline: 1px solid #eb9bc2;
+    font-style: italic;
    
 }
 #name2 {
@@ -106,7 +109,7 @@
 }
 #author{
     font-family: 'Roboto Mono', monospace;
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
     outline: 1px solid #eb9bc2;
 }
@@ -127,13 +130,10 @@ nav a{
 }
 
 a:hover{
-    text-decoration: underline;
-    font-family: 'Libre Barcode 128 Text';
-    color:white;  
-    font-size: 28px;
+    color:#eb9bc2;  
 }
 nav a:hover{
-    color: #BBBBBB;
+    color: #eb9bc2;
 }
 
 ul{
@@ -142,7 +142,7 @@ ul{
     justify-content: space-between;
     list-style: none;
     margin: 40px;
-    text-align: center;
+   
 
 }
 
@@ -153,10 +153,11 @@ nav a.active{
 /*Past*/
 
 .header-flexboxreading{
-    background-color:white;
+    background-color:#eb9bc2;;
     padding-top:20px;
+    padding-left: 20px;
     padding-bottom: 20px;
-    padding-right: 200px;
+    padding-right: 240px;
     font-family:'Libre Caslon Text', serif;
     color: black;
     font-size: 30px;
@@ -207,6 +208,7 @@ nav a.active{
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
+    outline: 0.5px solid #eb9bc2;
 
    
 }
