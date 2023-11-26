@@ -43,6 +43,7 @@ background-color: #F8F5EC;
 
 #maintitle{
     outline: 1px solid #eb9bc2;
+    font-size: 24px;
 }
 .index-row3{
     font-family: 'Roboto Mono', monospace;
@@ -152,6 +153,10 @@ nav a.active{
 }
 
 /*Past*/
+.bannermain-past
+{ height:100vh;
+background-color: #F8F5EC;
+}
 
 .header-flexboxreading{
     background-color:#eb9bc2;;
@@ -159,23 +164,22 @@ nav a.active{
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 240px;
-    font-family:'Libre Caslon Text', serif;
+    font-family:'Roboto Mono', monospace;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     flex-flow: hidden;
-    letter-spacing: 1px;
-    line-height: 25px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
     max-width: 1080px;
+    text-transform: uppercase;
   
 }
 .past-row2{
-    background-color:white;
     font-size: 14px;
     
 }
 
 .past-row3{
-    background-color:white;
     font-family: 'Roboto Mono', monospace;
     padding-left: 20px;
     padding-right: 20px;
@@ -190,6 +194,7 @@ nav a.active{
     line-height: 90px;
     text-align: center;
     outline: 0.5px solid #eb9bc2;
+    font-style: italic;
 
 }
 #number-past, #author-past{
@@ -198,9 +203,9 @@ nav a.active{
     line-height: 40px;
     text-align: center;
     outline: 0.5px solid #eb9bc2;
+    font-style: italic;
 }
 #description{
-    background-color:white;
     font-family: 'Old Standard TT', serif;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -210,11 +215,11 @@ nav a.active{
     font-size: 18px;
     text-transform: uppercase;
     outline: 0.5px solid #eb9bc2;
+    font-style: italic;
 
    
 }
 .tableofcontent{
-    background-color:white;
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
@@ -238,7 +243,6 @@ nav a.active{
 }
 
 .chapter-desktop{
-    background-color:white;
     font-family: 'Old Standard TT', serif;
     padding-top: 40px;
     padding-bottom: 40px;
