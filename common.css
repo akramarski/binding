@@ -324,6 +324,7 @@ width: 100%;
     font-family: 'Roboto Mono', monospace;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
     text-align: right;
     font-size: 24px;
     height: fit-content;
@@ -411,7 +412,7 @@ width: 100%;
 
 #description{
     font-family: 'Roboto Mono', monospace;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -421,8 +422,8 @@ width: 100%;
 }
 
 .tableofcontent{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: left;
     font-size: 14px;
    
@@ -507,12 +508,10 @@ width: 100%;
 
 
     .chapter-desktop, .listcontent,.tableofcontent{
-        padding: 0;
+        padding: 20px;
         
     }
-    .regular-text{
-        margin-left: 2px;
-    }
+    
 
 }
 .container-text{
@@ -630,10 +629,6 @@ width: 100%;
 
 }
 
-.fade-in {
-    padding: 30px;
-    pad
-  }
 
 /*Present*/
 
@@ -642,7 +637,7 @@ width: 100%;
     {
 .fade-in {
     opacity: 0;
-    transition:opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
     paddig
   }
   
