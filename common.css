@@ -20,7 +20,6 @@ body{
       margin: auto;
       overflow-x: hidden;
       background-color:#F8F5EC;
-      padding: 40px;
 }
 
 sup
@@ -475,6 +474,7 @@ width: 100%;
 
 }
 
+
 @media (max-width: 1000px)
 {
 
@@ -497,7 +497,21 @@ width: 100%;
 
     .listcontent{
         padding: 20px;
-        margin: 20px;
+        
+    }
+
+}
+
+@media (min-width: 320px)
+{
+
+
+    .chapter-desktop, .listcontent,.tableofcontent{
+        padding: 0;
+        
+    }
+    .regular-text{
+        margin-left: 2px;
     }
 
 }
@@ -542,7 +556,8 @@ width: 100%;
     font-size: 16px;
     line-height: 30px;
     outline: 1px solid #eb9bc2;
-    
+    margin-left: 40px;
+    margin-right: 40px;
 
 }
 
@@ -615,14 +630,23 @@ width: 100%;
 
 }
 
+.fade-in {
+    padding: 30px;
+    pad
+  }
+
 /*Present*/
 
 /* Animation */
+ @media (min-width: 800px)
+    {
 .fade-in {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition:opacity 1s ease-in-out;
+    paddig
   }
   
   .fade-in:hover {
     opacity: 1;
   }
+}
