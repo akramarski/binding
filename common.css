@@ -15,11 +15,35 @@
     --outlinebox: 0.5px solid #440021;
 }
 
+body{
+      height:100%;
+      margin: auto;
+      overflow-x: hidden;
+      background-color:#F8F5EC;
+      padding: 40px;
+}
+
+sup
+{
+    vertical-align: super;
+    font-size: smaller;
+    line-height: 1;
+}
 /*Index*/
 .mainbanner
-{ height:100vh;
+{  max-height: 100vh;
 background-color: #F8F5EC;
 }
+@media (min-width: 800px)
+{
+    .mainbanner
+    {
+        max-height: fit-content;
+        max-width: fit-content;
+        overflow: hidden;
+    }
+}
+
 
 .header-flexbox{
     padding-top: 60px;
@@ -33,29 +57,75 @@ background-color: #F8F5EC;
     line-height: 80px;
     
 }
-.menu{
-    display:inline-flex;
-    /*justify-content: space-between;*/
-    flex-direction: column;
-    font-size: 16px;
-    min-width: 425px;
+
+@media (min-width: 800px)
+{
+    .header-flexbox
+    {
+        font-size: 150px;
+        line-height: 130px;
+        padding-top: 80px;
+        outline: 2px solid #eb9bc2;
+    }
 }
 
+
+.menu{
+    display:inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 16px;
+    min-width: 425px;
+    overflow: hidden;
+    margin: auto;
+}
+@media (min-width: 800px)
+{
+    .menu, .index-row2, .past-row2
+    {
+        font-size: 16px;
+        margin: auto;
+    
+    }
+}
 #maintitle{
     outline: 1px solid #eb9bc2;
     font-size: 24px;
 }
 .index-row3{
     font-family: 'Roboto Mono', monospace;
-    padding-left:60px;
+    padding-left:100px;
     padding-top:70px ;
     padding-bottom: 60px;
     text-align: right;
     text-transform: uppercase;
     font-size: 24px;
     color: black;
+    overflow: hidden;
+    max-width: fit-content;
    
 }
+
+@media (min-width: 800px) 
+{
+    #maintitle
+    {
+        font-size: 40px;
+        padding-left: 200px;
+        outline: 2px solid #eb9bc2;
+        
+    }
+
+    .index-row3
+    {
+        max-width: fit-content;
+        max-height: fit-content;
+        padding-left: 200px;
+       
+    }
+
+}
+
 
 
 .index-description{
@@ -63,12 +133,25 @@ background-color: #F8F5EC;
     font-family: 'Roboto Mono', monospace;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: center;
     font-size: 16px;
-    background-color: #eb9bc2;
+    background-color: #FFE5F2;
+    overflow: hidden;
+    margin-bottom: 40px;
 
+}
+
+@media (min-width: 800px)
+{
+   #description-page
+    {
+       max-width: 60%;
+       margin: auto;
+
+
+    }
 }
 
 .index-text1, .index-text2, .index-text3{
@@ -79,6 +162,21 @@ background-color: #F8F5EC;
     padding-left: 20px;
     text-align: center;
 
+}
+
+@media (min-width: 800px)
+{
+    .index-text1, .index-text2, .index-text3
+    {
+      padding-top: 60px;
+
+    }
+    #number, #name,#name2,#name3, #author
+    {
+       max-width: 40%;
+       margin: auto;
+
+    }
 }
 
 #number{
@@ -116,6 +214,18 @@ background-color: #F8F5EC;
     outline: 1px solid #eb9bc2;
 }
 
+.pinkfooter{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    background-color:#FFE5F2;
+    padding: 20px;
+}
+.creamfooter{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    outline: 1px solid #eb9bc2;
+    padding: 50px;
+}
 
 /* defining our links */
 
@@ -125,17 +235,21 @@ a{
     color:black;
     
     
+    
 }
 nav a{
     padding:5px 15px;
     color: black;
+    align-items: center;
 }
 
 a:hover{
-    color:#eb9bc2;  
+    color:grey;
+   
 }
 nav a:hover{
-    color: #eb9bc2;
+    color:#eb9bc2;
+    text-decoration: underline;  
 }
 
 ul{
@@ -156,24 +270,52 @@ nav a.active{
 .bannermain-past
 { height:100vh;
 background-color: #F8F5EC;
+width: 100%;
+}
+
+@media (min-width: 800px) and (min-width: 600px)
+{
+    .bannermain-past
+    {
+        max-height: fit-content;
+        overflow: hidden;
+        
+    }
 }
 
 .header-flexboxreading{
-    background-color:#eb9bc2;
+    background-color:#F8F5EC;
     padding-top:20px;
     padding-left: 20px;
     padding-bottom: 20px;
-    padding-right: 260px;
-    font-family:'Roboto Mono', monospace;
+    padding-right: 280px;
+    font-family:'Libre Caslon Text', serif;
     color: black;
     overflow: hidden;
     font-size: 20px;
     letter-spacing: 0.25px;
     line-height: 20px;
-    max-width: 1080px;
-    text-transform: uppercase;
+    max-width: 100%;
+    outline: 1px solid #eb9bc2;
   
 }
+
+@media (min-width: 200px)
+{
+    .header-flexboxreading
+    {
+        max-width: 100%
+    }
+    .namesite
+    {
+        width: 125px;
+        overflow: hidden;
+
+    }
+
+}
+
+
 .past-row2{
     font-size: 14px;
     
@@ -185,8 +327,25 @@ background-color: #F8F5EC;
     padding-right: 20px;
     text-align: right;
     font-size: 24px;
+    height: fit-content;
     
    
+}
+
+.menu-reading{
+    overflow: hidden;
+    text-align: center;
+
+}
+
+@media (min-width: 200px)
+{
+
+    .menu-reading
+    {
+      text-align: center;
+
+    }
 }
 #name-past{
     font-family: 'Old Standard TT', serif;
@@ -197,6 +356,30 @@ background-color: #F8F5EC;
     font-style: italic;
 
 }
+
+@media (min-width: 800px)
+{
+
+    #name-past
+    {
+      font-size: 130px;
+      text-align: center;
+      line-height: 150px;
+      padding-top: 20px;
+    
+    }
+}
+@media (max-width: 360px)
+{
+
+    #name-past
+    {
+      font-size: 80px;
+      text-align: center;
+      line-height: 100px;
+    }
+}
+
 #number-past, #author-past{
     font-family: 'Old Standard TT', serif;
     font-size: 20px;
@@ -205,88 +388,202 @@ background-color: #F8F5EC;
     outline: 0.5px solid #eb9bc2;
     font-style: italic;
 }
+
+@media (min-width: 360px)
+{
+
+    #name-past,#number-past, #author-past
+    {
+       width: 80%;
+       margin: auto;
+       outline: 1px solid #eb9bc2;
+    }
+    
+}
+
+@media (min-width: 1200px)
+{
+
+    #name-past,#number-past, #author-past
+    {
+       width: 60%;
+    }
+}
+
 #description{
-    font-family: 'Old Standard TT', serif;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
-    outline: 0.5px solid #eb9bc2;
-    font-style: italic;
-
-   
 }
 
 .tableofcontent{
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
    
 }
 
-.listcontent{
-    float: center;
-    display:block;
+@media (min-width: 800px)
+{
+
+    .tableofcontent
+    {
+       width: 70%;
+       
+    }
+
+}
+
+.past-row4 {
+    align-content: center;
+    background-color:#F8F5EC;
     list-style: none;
-    font-style: italic;
+    max-width:100%;
+    height: fit-content;
+    text-align: center;
 
 
 }
+
+
 #content-past{
-    font-family: 'Old Standard TT', serif;
-    font-size: 20px;
-    line-height: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 30px;
     text-decoration: none;
-    font-style: italic;
+    
 
 }
+
 
 .chapter-desktop{
     font-family: 'Old Standard TT', serif;
-    padding-top: 40px;
+    padding-top: 5px;
     padding-bottom: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
     font-size: 18px;
     text-transform: uppercase;
     font-style: italic;
 
 }
-.container{
-    margin-top: 30px;
-    padding: 30px;
+
+@media (max-width: 1000px)
+{
+
+    .chapter-desktop
+    {
+       align-self: center;
+       padding: 20px;
+       
+    }
+    .listcontent{
+        display: grid;
+        padding: 60px;
+        margin: 20px;
+    }
+
+}
+@media (max-width: 600px)
+{
+
+
+    .listcontent{
+        padding: 20px;
+        margin: 20px;
+    }
+
+}
+.container-text{
+    margin: 50px;
+    padding-top: 60px;
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     line-height: 30px;
-    
+    overflow: hidden;
+     
 
 }
-.regular-text{ margin-top: 30px;
-    padding: 30px;
+
+@media (min-width: 800px)
+{
+
+    .regular-text
+    {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        flex: 2;
+        gap: 30px;
+        
+    }
+    .container-text
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+
+    }
+
+
+}
+.regular-text{
+    padding: 10px;
+    margin-bottom: 60px;
     font-family: 'Onest', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
-
-}
-
-.container-text{
-   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-
+    outline: 1px solid #eb9bc2;
+    
 
 }
 
 .blocktext{
-    margin-bottom: 50px;
-    outline: 0.5px solid #eb9bc2;
+    max-height: fit-content;
+    max-width: 823.42px;
+    outline: 1px solid #eb9bc2;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 800px)
+{
+
+    .blocktext
+    {
+        min-width: 300px;
+        
+    }
+
+    .section
+    {
+        min-width: 300px;
+        
+    }
+}
+
+@media (min-width: 1000px)
+{
+
+    .container-text
+    {
+        padding: 20px;
+    
+    }
+    #description
+    {
+    padding-left:50px;
+    padding-right: 50px;
+    
+    }
 }
 .quote{
     font-family: 'Old Standard TT', serif;
@@ -301,10 +598,31 @@ background-color: #F8F5EC;
 
 .textinfo{
     font-family: 'Old Standard TT', serif;
-    font-size: 30px;
+    font-size: 10px;
     line-height: 40px;
     text-align: center;
     font-style: italic;
     padding-bottom: 40px;
 
 }
+#subchapter{
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 50px;
+
+}
+
+/*Present*/
+
+/* Animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in:hover {
+    opacity: 1;
+  }
