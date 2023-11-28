@@ -413,6 +413,8 @@ width: 100%;
 
     }
 }
+
+/* Main Banner*/
 #name-past{
     font-family: var( --mainfont-past);
     font-size: 80px;
@@ -487,6 +489,7 @@ width: 100%;
     text-transform: uppercase;
 }
 
+/* table content*/
 .tableofcontent{
     padding-left: 30px;
     padding-right: 30px;
@@ -569,6 +572,8 @@ width: 100%;
     
 
 }
+
+/*text*/
 .container-text{
     margin: 50px;
     padding-top: 60px;
@@ -1288,7 +1293,7 @@ width: 100%;
 
 
 /* Animation */
-/*  @media (min-width: 800px)
+@media (min-width: 800px)
     {
 .fade-in {
     opacity: 0;
@@ -1298,4 +1303,4 @@ width: 100%;
   .fade-in:hover {
     opacity: 1;
   }
-}*/
+}
