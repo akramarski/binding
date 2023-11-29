@@ -31,7 +31,7 @@
 a{
     font-family: var( --font-supporttext);
     text-decoration: none;
-    color:black;
+    color:var( --text-color);
     text-decoration: underline;
     
     
@@ -39,7 +39,7 @@ a{
 }
 nav a{
     padding:5px 15px;
-    color: black;
+    color: var( --text-color);
     align-items: center;
 }
 
@@ -338,16 +338,6 @@ background-color:var(--color-offwhite);
 width: 100%;
 }
 
-@media (min-width: 800px) and (min-width: 600px)
-{
-    .bannermain-past
-    {
-        max-height: fit-content;
-        overflow: hidden;
-        
-    }
-}
-
 .header-flexboxreading{
     background-color:var(--color-offwhite);
     padding-top:20px;
@@ -365,20 +355,6 @@ width: 100%;
   
 }
 
-@media (min-width: 200px)
-{
-    .header-flexboxreading
-    {
-        max-width: 100%
-    }
-    .namesite
-    {
-        width: 125px;
-        overflow: hidden;
-
-    }
-
-}
 
 
 .past-row2{
@@ -404,16 +380,6 @@ width: 100%;
 
 }
 
-@media (min-width: 200px)
-{
-
-    .menu-reading
-    {
-      text-align: center;
-
-    }
-}
-
 /* Main Banner*/
 #name-past{
     font-family: var( --mainfont-past);
@@ -425,29 +391,6 @@ width: 100%;
 
 }
 
-@media (min-width: 800px)
-{
-
-    #name-past
-    {
-      font-size: 130px;
-      text-align: center;
-      line-height: 150px;
-      padding-top: 20px;
-    
-    }
-}
-@media (max-width: 360px)
-{
-
-    #name-past
-    {
-      font-size: 80px;
-      text-align: center;
-      line-height: 100px;
-    }
-}
-
 #number-past, #author-past{
     font-family: var( --mainfont-past);
     font-size: 20px;
@@ -455,27 +398,6 @@ width: 100%;
     text-align: center;
     outline:var(--outline-mobile);
     font-style: italic;
-}
-
-@media (min-width: 360px)
-{
-
-    #name-past,#number-past, #author-past
-    {
-       width: 80%;
-       margin: auto;
-       outline:var(--outline-mobile);
-    }
-    
-}
-
-@media (min-width: 1200px)
-{
-
-    #name-past,#number-past, #author-past
-    {
-       width: 60%;
-    }
 }
 
 #description{
@@ -496,18 +418,6 @@ width: 100%;
     text-align: left;
     font-size: 14px;
    
-}
-
-@media (min-width: 800px)
-{
-
-    .tableofcontent
-    {
-       width: 70%;
-       margin: auto;
-       
-    }
-
 }
 
 .past-row4 {
@@ -545,34 +455,6 @@ width: 100%;
 
 }
 
-
-@media (max-width: 1000px)
-{
-
-    .chapter-desktop
-    {
-       align-self: center;
-       padding: 20px;
-       
-    }
-    .listcontent{
-        display: grid;
-        margin-bottom: 50px;
-    }
-
-}
-@media (min-width: 320px)
-{
-
-
-    .chapter-desktop, .listcontent,.tableofcontent{
-        padding: 20px;
-        
-    }
-    
-
-}
-
 /*text*/
 .container-text{
     margin: 50px;
@@ -585,30 +467,7 @@ width: 100%;
 
 }
 
-@media (min-width: 800px)
-{
 
-    .regular-text
-    {
-        display: flex;
-        flex-direction: row;
-        flex-basis: 100%;
-        flex: 2;
-        gap: 30px;
-        
-    }
-    .container-text
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        margin: auto;
-
-
-    }
-
-
-}
 .regular-text{
     padding: 10px;
     margin-bottom: 60px;
@@ -629,40 +488,6 @@ width: 100%;
 }
 
 
-@media (min-width: 800px)
-{
-
-    .blocktext
-    {
-        min-width: 300px;
-        
-    }
-
-    .section
-    {
-        min-width: 300px;
-        
-    }
-}
-
-@media (min-width: 1000px)
-{
-
-    .container-text
-    {
-        padding: 20px;
-    
-    }
-    #description
-    {
-    padding-left:50px;
-    padding-right: 50px;
-    
-    }
-    .listcontent{
-        margin-left: 40px;
-    }
-}
 .quote{
     font-family: var( --mainfont-past);
     font-size: 24px;
@@ -693,10 +518,161 @@ width: 100%;
 
 }
 
+/* Media Past*/
 
-/*Present*/
+
+@media (min-width: 800px) and (min-width: 600px)
+{
+    .bannermain-past
+    {
+        max-height: fit-content;
+        overflow: hidden;
+    }
+}
 
 
+@media (min-width: 200px)
+{
+    .header-flexboxreading
+    {
+        max-width: 100%
+    }
+    .namesite
+    {
+        width: 125px;
+        overflow: hidden;
+
+    }
+    .menu-reading
+    {
+      text-align: center;
+
+    }
+
+    .chapter-desktop, .listcontent,.tableofcontent{
+        padding: 20px;
+        
+    }
+    
+
+}
+@media (min-width: 800px)
+{
+
+    #name-past
+    {
+      font-size: 130px;
+      text-align: center;
+      line-height: 150px;
+      padding-top: 20px;
+    
+    }
+    .tableofcontent
+    {
+       width: 70%;
+       margin: auto;
+       
+    }
+
+    .regular-text
+    {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        flex: 2;
+        gap: 30px;
+        
+    }
+    .container-text
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin: auto;
+
+
+    }
+    .blocktext
+    {
+        min-width: 300px;
+        
+    }
+
+    .section
+    {
+        min-width: 300px;
+        
+    }
+    #name-past,#number-past, #author-past{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (max-width: 360px)
+{
+
+    #name-past
+    {
+      font-size: 80px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    #name-past,#number-past, #author-past
+    {
+       width: 80%;
+       margin: auto;
+       outline:var(--outline-mobile);
+    }
+    
+}
+
+
+@media (max-width: 1000px)
+{
+
+    .chapter-desktop
+    {
+       align-self: center;
+       padding: 20px;
+       
+    }
+    .listcontent{
+        display: grid;
+        margin-bottom: 50px;
+        margin: auto;
+    }
+
+    .container-text
+    {
+        padding: 20px;
+    
+    }
+    #description
+    {
+    padding-left:50px;
+    padding-right: 50px;
+    
+    }
+    .listcontent{
+        margin-left: 40px;
+    }
+}
+@media (min-width: 1200px)
+{
+
+    #name-past,#number-past, #author-past
+    {
+       width: 60%;
+       margin: auto;
+    }
+}
+
+
+
+/*PRESENT*/
+
+/*Header*/
 .present-row3{
     font-family: var( --font-supporttext);
     padding-left: 20px;
@@ -719,48 +695,6 @@ width: 100%;
 
 }
 
-
-@media (min-width: 360px)
-{
-
-    #name-present
-    {
-      font-size: 50px;
-      text-align: center;
-      line-height: 60px;
-      padding: 10px;
-      
-    }
-  
-}
-@media (min-width: 700px)
-{
-
-    #name-present
-    {
-      font-size: 70px;
-      text-align: center;
-      line-height: 80px;
-      padding: 10px;
-      
-    }
-}
-
-@media (min-width: 1000px)
-{
-
-    #name-present
-    {
-      font-size: 120px;
-      text-align: center;
-      line-height: 150px;
-      padding-left: 30px;
-      padding-right: 30px;
-      
-    }
-}
-
-
 #number-present, #author-present{
     font-family:var( --mainfont-present);
     font-size: 20px;
@@ -772,73 +706,8 @@ width: 100%;
 
 }
 
-@media (min-width: 360px)
-{
 
-    #name-present,#number-present, #author-present
-    {
-       width: 100%;
-       margin: auto;
-       outline: var(--outline-mobile);
-       margin-bottom: 10px;
-    }
-    
-}
-
-@media (min-width: 1200px)
-{
-
-    #name-present,#number-present, #author-present
-    {
-       width: 60%;
-    }
-}
-
-@media (min-width: 1400px)
-{
-
-    #name-present,#number-present, #author-present
-    {
-       width: 80%;
-
-    }
-}
-
-@media (min-width: 800px)
-{
-    .present-row3{
-        width: 80%;
-    }
-
-    .colum-texpresent
-    {
-        display: flex;
-        flex-direction: row;
-        flex-basis: 100%;
-        flex: 2;
-        gap: 30px;
-        
-    }
-    .container-text
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-
-    }
-
-
-}
-@media (min-width: 700px)
-{
-    .present-row3{
-        width: 80%;
-        margin: auto;
-    }
-    
-
-}
+/*text*/
 .colum-textpresent{
     padding-left: 10px;
     padding-right: 10px;
@@ -854,50 +723,13 @@ width: 100%;
     margin-bottom:  60px;
 
 }
-@media (min-width: 1000px) 
-{
 
-    .colum-textpresent
-    {
-       width: 70%;
-       margin-top: 60px;
-       margin: auto;
-       margin-top: 30px;
-    }
-}
 .blocktextpresent{
     max-height: fit-content;
     max-width: 823.42px;
     outline:var(--outline-mobile);
     margin-bottom: 20px;
     border-radius:130px;
-}
-
-@media (min-width: 800px)
-{
-
-    .blocktextpresent
-    {
-        min-width: 300px;
-        
-    }
-
-    .section
-    {
-        min-width: 300px;
-        
-    }
-    .listcontent
-    {
-        margin:0;
-        
-    }
-    .regular-text{
-        margin-left: 70px;
-        margin-right: 70px;
-    
-    }
-    
 }
 
 #subchapter-present{
@@ -952,8 +784,134 @@ width: 100%;
     
 }
 
+
+
+/*Media Present*/
+@media (min-width: 360px)
+{
+
+    #name-present
+    {
+      font-size: 50px;
+      text-align: center;
+      line-height: 60px;
+      padding: 10px;
+      
+    }
+    #name-present,#number-present, #author-present
+    {
+       width: 100%;
+       margin: auto;
+       outline: var(--outline-mobile);
+       margin-bottom: 10px;
+    }
+  
+}
+@media (min-width: 700px)
+{
+
+    #name-present
+    {
+      font-size: 70px;
+      text-align: center;
+      line-height: 80px;
+      padding: 10px;
+      
+    }
+    .present-row3{
+        width: 80%;
+        margin: auto;
+    }
+    
+
+}
+
+@media (min-width: 1000px)
+{
+
+    #name-present
+    {
+      font-size: 120px;
+      text-align: center;
+      line-height: 150px;
+      padding-left: 30px;
+      padding-right: 30px;
+      
+    }
+
+    .colum-textpresent
+    {
+       width: 70%;
+       margin-top: 60px;
+       margin: auto;
+       margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+
+    #name-present,#number-present, #author-present
+    {
+       width: 60%;
+    }
+}
+
+@media (min-width: 1400px)
+{
+
+    #name-present,#number-present, #author-present
+    {
+       width: 80%;
+
+    }
+}
+
 @media (min-width: 800px)
 {
+    .present-row3{
+        width: 80%;
+    }
+
+    .colum-texpresent
+    {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        flex: 2;
+        gap: 30px;
+        
+    }
+    .container-text
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+
+    }
+    .blocktextpresent
+    {
+        min-width: 300px;
+        
+    }
+
+    .section
+    {
+        min-width: 300px;
+        
+    }
+    .listcontent
+    {
+        margin:0;
+        
+    }
+    .regular-text{
+        margin-left: 70px;
+        margin-right: 70px;
+    
+    }
     .regular-textpresent{
         margin-left: 70px;
         margin-right: 70px;
@@ -981,25 +939,16 @@ width: 100%;
         display: inline-block;
       }
 
-   
+
 }
 
-/*Future*/
+/*FUTURE*/
 
+/*Header*/
 .bannermain-future
 { height:100vh;
 background-color:var(--color-offwhite);
 width: 100%;
-}
-
-@media (min-width: 800px) and (min-width: 600px)
-{
-    .bannermain-futre
-    {
-        max-height: fit-content;
-        overflow: hidden;
-        
-    }
 }
 
 #name-future{
@@ -1011,47 +960,7 @@ width: 100%;
     border-radius:180px;
 
 }
-@media (min-width: 360px)
-{
-
-    #name-future
-    {
-      font-size: 50px;
-      text-align: center;
-      line-height: 60px;
-      padding: 10px;
-      
-    }
-  
-}
-@media (min-width: 700px)
-{
-
-    #name-future
-    {
-      font-size: 90px;
-      text-align: center;
-      line-height: 100px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      
-    }
-}
-
-@media (min-width: 1000px)
-{
-
-    #name-future
-    {
-      font-size: 120px;
-      text-align: center;
-      line-height: 150px;
-      padding-left: 30px;
-      padding-right: 30px;
-      
-    }
-}
-
+/*Text*/
 
 #number-future, #author-future{
     font-family:var(--mainfont-future);
@@ -1060,37 +969,6 @@ width: 100%;
     text-align: center;
     margin-bottom: 20px;
 
-}
-
-@media (min-width: 360px)
-{
-
-    #name-future,#number-future, #author-future
-    {
-       width: 100%;
-       margin: auto;
-       margin-bottom: 10px;
-    }
-    
-}
-
-@media (min-width: 1200px)
-{
-
-    #name-future,#number-future, #author-future
-    {
-       width: 60%;
-    }
-}
-
-@media (min-width: 1400px)
-{
-
-    #name-future,#number-future, #author-future
-    {
-       width: 80%;
-
-    }
 }
 
 .colum-textfuture{
@@ -1107,42 +985,6 @@ width: 100%;
     margin-top: 20px;
     margin-bottom:  60px;
 
-}
-@media (min-width: 800px)
-{
-    .present-row3{
-        width: 80%;
-    }
-
-    .container-text
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-
-    }
-
-
-}
-@media (min-width: 700px)
-{
-    .present-row3{
-        width: 80%;
-        margin: auto;
-    }
-}
-
-@media (min-width: 1000px) 
-{
-
-    .colum-textfuture, .colum-captionfuture
-    {
-       width: 60%;
-       margin: auto;
-       margin-top: 30px;
-       margin-bottom: 30px;
-    }
 }
 
 .regular-text-future{
@@ -1184,9 +1026,85 @@ width: 100%;
 
 }
 
+#subchapter2-future{
+    font-family:var( --mainfont-present);
+    font-size: 20px;
+    box-shadow: var(--outline-blur); 
+    border-radius:130px;
+    margin-bottom: 30px;
+   text-align: left;
+
+}
+
+/*Media future*/
+
+@media (min-width: 800px) and (min-width: 600px)
+{
+    .bannermain-futre
+    {
+        max-height: fit-content;
+        overflow: hidden;
+        
+    }
+}
+
+@media (min-width: 360px)
+{
+
+    #name-future
+    {
+      font-size: 50px;
+      text-align: center;
+      line-height: 60px;
+      padding: 10px;
+      
+    }
+    #name-future,#number-future, #author-future
+    {
+       width: 100%;
+       margin: auto;
+       margin-bottom: 10px;
+    }
+    
+  
+}
+@media (min-width: 700px)
+{
+
+    #name-future
+    {
+      font-size: 90px;
+      text-align: center;
+      line-height: 100px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+    }
+    .present-row3{
+        width: 80%;
+        margin: auto;
+    }
+}
+
 @media (min-width: 1000px)
 {
 
+    #name-future
+    {
+      font-size: 120px;
+      text-align: center;
+      line-height: 150px;
+      padding-left: 30px;
+      padding-right: 30px;
+      
+    }
+    .colum-textfuture, .colum-captionfuture
+    {
+       width: 60%;
+       margin: auto;
+       margin-top: 30px;
+       margin-bottom: 30px;
+    }
     .captions
     {
         display: flex;
@@ -1219,9 +1137,37 @@ width: 100%;
       }
 }
 
-@media (min-width: 800px)
+@media (min-width: 1200px)
 {
 
+    #name-future,#number-future, #author-future
+    {
+       width: 60%;
+    }
+}
+
+@media (min-width: 1400px)
+{
+
+    #name-future,#number-future, #author-future
+    {
+       width: 80%;
+
+    }
+}
+
+@media (min-width: 800px)
+{
+    .present-row3{
+        width: 80%;
+    }
+
+    .container-text
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
     .regular-text-future
     {
         display: flex;
@@ -1266,6 +1212,7 @@ width: 100%;
 
 
 }
+
 @media (min-width: 400px)
 {
 
@@ -1276,20 +1223,6 @@ width: 100%;
     }
 
 }
-
-
-
-#subchapter2-future{
-    font-family:var( --mainfont-present);
-    font-size: 20px;
-    box-shadow: var(--outline-blur); 
-    border-radius:130px;
-    margin-bottom: 30px;
-   text-align: left;
-
-}
-
-
 
 
 /* Animation */
